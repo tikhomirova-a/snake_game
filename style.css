@@ -1,0 +1,88 @@
+.body {
+  margin: 0;
+  padding: 20px 5%;
+
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(70, 68, 68);
+
+  background-color: lavenderblush;
+}
+
+.game {
+  width: 60%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.game h1 {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.game__start {
+  padding: 5px 10px;
+  margin-bottom: 20px;
+
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(70, 68, 68);
+
+  border-radius: 0;
+  border: 1px solid gray;
+
+  cursor: pointer;
+}
+
+.game__score {
+  font-size: 20px;
+}
+
+.game__grid {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 200px;
+  height: 200px;
+
+  border: 1px solid pink;
+}
+
+.game__grid--game-over {
+  animation: shake 250ms ease-in;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+}
+
+.snake {
+  background-color:rgb(71, 231, 71);
+}
+
+.apple {
+  background-color: crimson;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: -20px;
+  }
+
+  30% {
+    margin-left: 20px;
+  }
+
+  60% {
+    margin-left: -20px;
+  }
+
+  90% {
+    margin-left: 20px;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
